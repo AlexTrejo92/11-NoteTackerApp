@@ -6,7 +6,7 @@ const path = require('path');
 const APIroutes = require('./routes/index.js')
 const app = express();
 // This variable specifies on which port the Express.js server will run
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Middleware pointing to the public folder &
 app.use(express.static('public'));
