@@ -23,11 +23,11 @@ router.post('/api/notes', (req, res) => {
     fs.writeFileSync('./db/db.json', JSON.stringify(db));
     res.json(db)
 });
-//Create for loop to iterate over the db.json array and then make an IF statement to check if ihe id note matches with some one to delete it.
-router.delete('/api/notes/:id', (req, res) => {
-    console.log(req.params)
-}
-)
+//TODO: Use .delete method to delete notes from the application.
+// router.delete('/api/notes/:id', (req, res) => {
+//     console.log(req.params)
+// }
+// )
 
 
 module.exports = router;
